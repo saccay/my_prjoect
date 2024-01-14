@@ -2,7 +2,7 @@
 This is my project to fetch the data from source
 Fetch the data from source for a single data source such as BTC
 1) display the data if that is correect or not
-2) Apply bollinger filter for the last 20 days and retrieve last 20days of dailiy agg data
+2) Apply bollinger filter for the last 20 days and retrieve last 20days of dailiy agg data and its properties such as std,mean and slope
 3) apply rsi to apply for additional parameter for the kpi
 4) test the data for the input amount of x
 5) present the result for the success rate
