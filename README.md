@@ -11,8 +11,8 @@ Fetch the data from source for a single data source such as BTC
      6)b) decresing data trend/point with at least 99 percent of succes
      6)c) flat data trend/point with at least 98 percent of success
 
-7) explore differnet inputs for the function
-8) list for the best oportunity
+7) explore different inputs for the function
+8) list for the best opportunity
 9) explore total benefit
 10) display result
 11) search keywords in the twitter for the total number of counts
