@@ -23,7 +23,7 @@ def run_ipynb(ipynb_path):
     # Execute the generated Python script
     exec(python_script)
 def job():
-    print('1')
+    print('2')
     # Replace 'your_notebook.ipynb' with the actual notebook file name
     notebook_path = 'my_prjoect_main.ipynb'
    
