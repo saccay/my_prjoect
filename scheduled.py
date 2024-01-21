@@ -13,7 +13,7 @@ def run_ipynb(ipynb_path):
     with open(ipynb_path, 'r', encoding='utf-8') as notebook_file:
         notebook_content = notebook_file.read()
     # Convert the notebook to a Python script
-    print('1')
+    print('2: Run the ipynb notebook')
         # Read the notebook content
     # Convert the notebook to a Python script
     notebook = nbformat.reads(notebook_content, as_version=4)
@@ -23,7 +23,7 @@ def run_ipynb(ipynb_path):
     # Execute the generated Python script
     exec(python_script)
 def job():
-    print('1')
+    print('1: Start executing notebook')
     # Replace 'your_notebook.ipynb' with the actual notebook file name
     notebook_path = 'my_prjoect_main.ipynb'
    
@@ -31,15 +31,17 @@ def job():
     run_ipynb(notebook_path)
     print(notebook_path)
 
-print('3')
+print('Scheduler is set!')
 # Schedule the job to run every day at 3:00 AM
 schedule.every().day.at("07:00").do(job)
+#schedule.every(1).day.do(job)
 #schedule.every(1).seconds.do(job)
 
 # Keep the script running to allow schedule to work
 while True:
-    print('4')
+    print('Scheduler loop is initiated!')
     schedule.run_pending()
-    print('Inner schedule loop is initiated!')
+    print('Run pending!')
     time.sleep(59)
 
+#caffeinate -w 36388
